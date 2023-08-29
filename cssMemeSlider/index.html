@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>cssMemeSlider</title>
-</head>
-<body>
-  
-</body>
+  <link rel="stylesheet" href="style.css"/>
+ </head>
+ <body>
+  <div class="wrapper">
+   <div class="item__meme">
+    <label class="meme__title" for="meme1">
+     <img class="meme__picture" src="./assets/выбор.png" alt="выбор"/>
+     <span class="meme__name">Выбор очевиден</span>
+    </label>
+   </div>
+   <div class="item__meme">
+    <label class="meme__title" for="meme2">
+     <img class="meme__picture" src="./assets/фронт.png" alt="фронт"/>
+     <span class="meme__name">А ты хочешь на фронт?</span>
+    </label>
+   </div>
+   <div class="item__meme">
+    <label class="meme__title" for="meme3">
+     <img class="meme__picture" src="./assets/не_знаем.jpg" alt="не_знаем"/>
+     <span class="meme__name">
+      Страшно, очень страшно! Мы не знаем что это такое Если бы мы знали что это
+      такое, мы не знаем что это такое
+     </span>
+    </label>
+   </div>
+   <div class="item__meme">
+    <label class="meme__title" for="meme4">
+     <img class="meme__picture" src="./assets/конец.jpg" alt="конец"/>
+     <span class="meme__name">Ждём конец</span>
+    </label>
+   </div>
+   <div class="block__buttons">
+    <input class="button" type="radio" name="meme" id="meme1" checked/>
+    <input class="button" type="radio" name="meme" id="meme2"/>
+    <input class="button" type="radio" name="meme" id="meme3"/>
+    <input class="button" type="radio" name="meme" id="meme4"/>
+   </div>
+  </div>
+ </body>
 </html>
