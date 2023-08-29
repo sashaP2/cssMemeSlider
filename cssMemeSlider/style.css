@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to bottom right, blue, pink);
+}
+
+.meme__picture {
+  width: 35vw;
+  text-align: center;
+}
+
+.meme__name {
+  font-size: large;
+  cursor: pointer;
+}
+
+.wrapper {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.item__meme {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__block {
+  display: flex;
+  justify-content: space-between;
+}
