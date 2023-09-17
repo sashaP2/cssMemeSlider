@@ -4,14 +4,14 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient(to bottom right, blue, pink);
+  background: #2b3639;
 }
 
 .meme__picture {
   width: 100%;
   margin: 4% 0;
   text-align: center;
-border-radius: 1rem;
+border-radius: 5rem;
 }
 
 .meme__picture__block {
@@ -20,8 +20,11 @@ transition: transform 0.4s;
 }
 
 .meme__name {
-  font-size: 2rem;
- min-width: 100%;
+  font-size: 2.5rem;
+    min-width: 101%;
+    font-style: italic;
+    color: #d4e2e2;
+    text-shadow: 0.2rem 0 0.2rem red;
 }
 
 .meme__name__block {
@@ -46,6 +49,7 @@ transition: transform 0.4s;
 .block {
 display: flex;
 flex-wrap: wrap;
+margin: 2rem 0;
 }
 
 .item__meme {
@@ -59,7 +63,7 @@ flex-wrap: wrap;
 }
 
 .block__buttons {
-  order: 3;
+  order: 1;
   margin-left: auto;
 }
 /*******/
@@ -95,5 +99,59 @@ flex-wrap: wrap;
 
 .block__buttons:has(#meme4:checked) ~ .wrapper__name div {
   transform: translate(-300%);
+}
+
+
+.new__button {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-color: #d4e2e2;
+  border: 0.2rem solid red;
+  border-radius: 50%;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.button {
+  display: none;
+}
+
+.block__buttons:has(#meme1:checked) .new__button1 {
+  border: 0.2rem solid red;
+  background-color: #2b3639;
+}
+
+.block__buttons:has(#meme2:checked) .new__button2 {
+  border: 0.2rem solid red;
+  background-color: #2b3639;
+}
+.block__buttons:has(#meme3:checked) .new__button3 {
+  border: 0.2rem solid red;
+  background-color: #2b3639;
+}
+.block__buttons:has(#meme4:checked) .new__button4 {
+  border: 0.2rem solid red;
+  background-color: #2b3639;
+}
+
+.block__buttons:has(#meme1:checked):hover .new__button1,
+.block__buttons:has(#meme2:checked):hover .new__button2,
+.block__buttons:has(#meme3:checked):hover .new__button3,
+.block__buttons:has(#meme4:checked):hover .new__button4 {
+  border: 0.2rem solid d4e2e2;
+  background-color: #2b3639;
+}
+
+
+
+.new__button:active .new__button {
+  border: 0.2rem solid red;
+  background-color: #2b3639;
+}
+
+.new__button:hover {
+  background-color: red;
+  border: 0.2rem solid red;
 }
 
