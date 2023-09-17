@@ -8,21 +8,44 @@ body {
 }
 
 .meme__picture {
-  width: 70vw;
+  width: 100%;
   margin: 4% 0;
   text-align: center;
 border-radius: 1rem;
 }
 
+.meme__picture__block {
+display: flex;
+transition: transform 0.4s;
+}
+
 .meme__name {
-  font-size: large;
-  cursor: pointer;
+  font-size: 2rem;
+ min-width: 100%;
+}
+
+.meme__name__block {
+  width: 100%;
+  display: flex;
+  transition: transform 0.4s;
 }
 
 .wrapper {
   margin: 0 auto;
   text-align: center;
-  width: 70vw;
+  width: 55rem;
+  overflow: hidden;
+}
+
+.wrapper__name {
+  text-align: left;
+  width: 70%;
+  /*overflow: hidden;*/
+}
+
+.block {
+display: flex;
+flex-wrap: wrap;
 }
 
 .item__meme {
@@ -35,22 +58,42 @@ border-radius: 1rem;
   justify-content: space-between;
 }
 
+.block__buttons {
+  order: 3;
+  margin-left: auto;
+}
 /*******/
 
 
-#meme1:checked ~ .item__meme1 {
+.block__buttons:has(#meme1:checked) ~ .meme__picture__block {
   transform: translate(0);
 }
 
-#meme2:checked ~ .item__meme2 {
+.block__buttons:has(#meme2:checked) ~ .meme__picture__block{
   transform: translate(-100%);
 }
 
-#meme3:checked ~ .item__meme3 {
+.block__buttons:has(#meme3:checked) ~ .meme__picture__block{
+  transform: translate(-200%);
+}
+
+.block__buttons:has(#meme4:checked) ~ .meme__picture__block{
+  transform: translate(-300%);
+}
+/*****/
+#meme1:checked ~ .meme__name__block {
+  transform: translate(0);
+}
+
+#meme2:checked ~ .meme__name__block {
   transform: translate(-100%);
 }
 
-#meme4:checked ~ .item__meme4 {
-  transform: translate(-100%);
+.block__buttons:has(#meme3:checked) ~ .meme__name__block {
+  transform: translate(-200%);
+}
+
+.block__buttons:has(#meme4:checked) ~ .meme__name__block {
+  transform: translate(-300%);
 }
 

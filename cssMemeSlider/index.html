@@ -8,41 +8,36 @@
  </head>
  <body>
   <div class="wrapper">
-
-    <div class="meme__picture__block">
-     <img class="meme__picture" src="./assets/выбор.png" alt="выбор" />
-     <img class="meme__picture" src="./assets/фронт.png" alt="фронт" />
-     <img class="meme__picture" src="./assets/не_знаем.jpg" alt="не_знаем" />
-     <img class="meme__picture" src="./assets/конец.jpg" alt="конец" />
+<div class="block">
+  <div class="block__buttons">
+    <div>
+      <label class="meme__title" for="meme1"></label>
+    <label class="meme__title" for="meme2"></label>
+    <label class="meme__title" for="meme3"></label>
+    <label class="meme__title" for="meme4"></label>
+  <input class="button" type="radio" name="meme" id="meme1" checked />
+  <input class="button" type="radio" name="meme" id="meme2" />
+  <input class="button" type="radio" name="meme" id="meme3" />
+  <input class="button" type="radio" name="meme" id="meme4" />
     </div>
- 
-    <div class="footer__block">
-     <div class="meme__name__block">
-       <span class="meme__name">Выбор очевиден</span>
-       <span class="meme__name">А ты хочешь на фронт?</span>
-       <span class="meme__name">Страшно, очень страшно</span>
-       <span class="meme__name">Ждём конец</span>
-      </div>
- 
-      <div class="block__buttons">
-       <div class="item__meme item__meme1">
-         <label class="meme__title" for="meme1"></label>
-        </div>
-        <div class="item__meme item__meme2">
-         <label class="meme__title" for="meme2"></label>
-        </div>
-        <div class="item__meme item__meme3">
-         <label class="meme__title" for="meme3"></label>
-        </div>
-        <div class="item__meme item__meme4">
-         <label class="meme__title" for="meme4"></label>
-        </div>
-       <input class="button" type="radio" name="meme" id="meme1" checked />
-       <input class="button" type="radio" name="meme" id="meme2" />
-       <input class="button" type="radio" name="meme" id="meme3" />
-       <input class="button" type="radio" name="meme" id="meme4" />
-      </div>
-    </div>
+ </div>
+ <div class="meme__picture__block">
+  <div class="meme__picture__block">
+    <img class="meme__picture" src="./assets/выбор.png" alt="выбор" />
+    <img class="meme__picture" src="./assets/фронт.png" alt="фронт" />
+    <img class="meme__picture" src="./assets/не_знаем.jpg" alt="не_знаем" />
+    <img class="meme__picture" src="./assets/конец.jpg" alt="конец" />
+   </div>
+ </div>
+   <div class="wrapper__name">
+    <div class="meme__name__block">
+      <span class="meme__name meme__name1">Выбор очевиден</span>
+      <span class="meme__name meme__name2">А ты хочешь на фронт?</span>
+      <span class="meme__name meme__name3">Страшно, очень страшно</span>
+      <span class="meme__name meme__name4">Ждём конец</span>
+     </div>
+   </div>
+</div>
    </div>
  </body>
 </html>
