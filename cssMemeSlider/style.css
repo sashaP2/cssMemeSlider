@@ -40,7 +40,7 @@ transition: transform 0.4s;
 .wrapper__name {
   text-align: left;
   width: 70%;
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 
 .block {
@@ -81,19 +81,19 @@ flex-wrap: wrap;
   transform: translate(-300%);
 }
 /*****/
-#meme1:checked ~ .meme__name__block {
+.block__buttons:has(#meme1:checked) ~ .wrapper__name div {
   transform: translate(0);
 }
 
-#meme2:checked ~ .meme__name__block {
+.block__buttons:has(#meme2:checked) ~ .wrapper__name div {
   transform: translate(-100%);
 }
 
-.block__buttons:has(#meme3:checked) ~ .meme__name__block {
+.block__buttons:has(#meme3:checked) ~ .wrapper__name div {
   transform: translate(-200%);
 }
 
-.block__buttons:has(#meme4:checked) ~ .meme__name__block {
+.block__buttons:has(#meme4:checked) ~ .wrapper__name div {
   transform: translate(-300%);
 }
 
