@@ -162,3 +162,19 @@ margin: 2rem 0;
   padding: 0.6rem;
   cursor: pointer;
 }
+
+@media screen and (max-width:500px) {
+  .block__buttons {
+    order: 1;
+    margin: auto;
+}
+
+.wrapper__name {
+  width: 100%;
+  order: 2;
+}
+
+.meme__name {
+  margin: 1rem 0;
+}
+}
