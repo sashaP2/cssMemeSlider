@@ -11,7 +11,7 @@ body {
   width: 70vw;
   margin: 4% 0;
   text-align: center;
-  box-shadow: 0px 0px 15px 10px #000;
+box-shadow: 0px 0px 15px 10px #000;
 }
 
 .meme__name {
@@ -34,3 +34,23 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
+/*******/
+
+
+#meme1:checked ~ .item__meme1 {
+  transform: translate(0);
+}
+
+#meme2:checked ~ .item__meme2 {
+  transform: translate(-100%);
+}
+
+#meme3:checked ~ .item__meme3 {
+  transform: translate(-100%);
+}
+
+#meme4:checked ~ .item__meme4 {
+  transform: translate(-100%);
+}
+
