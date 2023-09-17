@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #2b3639;
+}
+
+.meme__picture {
+  width: 100%;
+  margin: 4% 0;
+  text-align: center;
+border-radius: 5rem;
+}
+
+.meme__picture__block {
+display: flex;
+transition: transform 0.4s;
+}
+
+.meme__name {
+  font-size: 2.5rem;
+    min-width: 101%;
+    font-style: italic;
+    color: #d4e2e2;
+    text-shadow: 0.2rem 0 0.2rem red;
+}
+
+.meme__name__block {
+  width: 100%;
+  display: flex;
+  transition: transform 0.4s;
+}
+
+.wrapper {
+  margin: 0 auto;
+  text-align: center;
+  width: 55rem;
+  overflow: hidden;
+}
+
+.wrapper__name {
+  text-align: left;
+  width: 70%;
+  overflow: hidden;
+}
+
+.block {
+display: flex;
+flex-wrap: wrap;
+margin: 2rem 0;
+}
+
+.item__meme {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block__buttons {
+  order: 1;
+  margin-left: auto;
+}
+/*******/
+
+
+.block__buttons:has(#meme1:checked) ~ .meme__picture__block {
+  transform: translate(0);
+}
+
+.block__buttons:has(#meme2:checked) ~ .meme__picture__block{
+  transform: translate(-100%);
+}
+
+.block__buttons:has(#meme3:checked) ~ .meme__picture__block{
+  transform: translate(-200%);
+}
+
+.block__buttons:has(#meme4:checked) ~ .meme__picture__block{
+  transform: translate(-300%);
+}
+/*****/
+.block__buttons:has(#meme1:checked) ~ .wrapper__name div {
+  transform: translate(0);
+}
+
+.block__buttons:has(#meme2:checked) ~ .wrapper__name div {
+  transform: translate(-100%);
+}
+
+.block__buttons:has(#meme3:checked) ~ .wrapper__name div {
+  transform: translate(-200%);
+}
+
+.block__buttons:has(#meme4:checked) ~ .wrapper__name div {
+  transform: translate(-300%);
+}
+
+
+.new__button {
+  display: inline-block;
+  width: 85%;
+    height: 85%;
+  background-color: #d4e2e2;
+  border: 0.2rem solid red;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.button {
+  display: none;
+  padding: 1rem;
+}
+
+.block__buttons:has(#meme1:checked) .new__button1 {
+  border: 0.2rem solid red;
+  background-color: #2b3639;
+}
+
+.block__buttons:has(#meme2:checked) .new__button2 {
+  border: 0.2rem solid red;
+  background-color: #2b3639;
+}
+.block__buttons:has(#meme3:checked) .new__button3 {
+  border: 0.2rem solid red;
+  background-color: #2b3639;
+}
+.block__buttons:has(#meme4:checked) .new__button4 {
+  border: 0.2rem solid red;
+  background-color: #2b3639;
+}
+
+.block__buttons:has(#meme1:checked):hover .new__button1,
+.block__buttons:has(#meme2:checked):hover .new__button2,
+.block__buttons:has(#meme3:checked):hover .new__button3,
+.block__buttons:has(#meme4:checked):hover .new__button4 {
+  border: 0.2rem solid d4e2e2;
+  background-color: #2b3639;
+}
+
+
+
+.new__button:active .new__button {
+  border: 0.2rem solid red;
+  background-color: #2b3639;
+}
+
+.new__button:hover {
+  background-color: red;
+  border: 0.2rem solid red;
+}
+
+.meme__title {
+  width: 3rem;
+  display: inline-block;
+  height: 3rem;
+  padding: 0.6rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width:500px) {
+  .block__buttons {
+    order: 1;
+    margin: auto;
+}
+
+.wrapper__name {
+  width: 100%;
+  order: 2;
+}
+
+.meme__name {
+  margin: 1rem 0;
+}
+}
